@@ -9,11 +9,9 @@
 <body>
   <header>
     <div class="container">
-      <div class="logo">
-        <a>
-          <img src="https://via.placeholder.com/154x64" width="154" height="64" alt="Логотип Gllacy shop">
-        </a>
-      </div>
+      <a class="logo">
+        <img src="https://via.placeholder.com/154x64" width="154" height="64" alt="Логотип Gllacy shop">
+      </a>
       <nav>
         <ul>
           <li>
@@ -33,37 +31,52 @@
             <!-- Это форма поиска -->
           </li>
           <li>
-            <a href="#"><span>Вход</span></a>
+            <a href="#">Вход</a>
             <!-- Это форма входа -->
           </li>
           <li>
-            <a href="#"><span>Пусто</span></a>
+            <a href="#">Пусто</a>
           </li>
         </ul>
       </nav>
       <div class="work-time">
         <p>с 10 до 20, ежедневно</p>
-        <p>8 812 450-25-25</p>
+        <a href="tel:88124502525">812 450-25-25</a>
       </div>
     </div>
   </header>
+
   <main>
-    <section>
-      <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-      <h2>Шоколадный пломбир и лимонный сорбет</h2>
-      <h2>Пломбир с помадкой и клубничный щербет</h2>
-      <div class="slider">
-        <!-- Тут будут кнопки слайдера -->
+    <h1>Магазин мороженного Gllacy shop</h1>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide cream-raspberry">
+          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+          <a href="#">Дайте оба!</a>
+        </div>
+        <div class="slide choco-limon">
+          <h2>Шоколадный пломбир и лимонный сорбет</h2>
+          <a href="#">Дайте оба!</a>
+        </div>
+        <div class="slide fondant-strawberry">
+          <h2>Пломбир с помадкой и клубничный щербет</h2>
+          <a href="#">Дайте оба!</a>
+        </div>
       </div>
-      <a href="catalog.html">Давайте оба</a>
-    </section>
+      <div class="slide-controls">
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
+      </div>
+    </div>
     <section>
-      <article class="banner-1">
+      <h2>Дарим подарки!</h2>
+      <article class="banner free-jam">
         <h3>Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
         <a href="catalog.html">Хочу варенье!</a>
       </article>
-      <article class="banner-2">
+      <article class="banner free-chocolate">
         <h3>Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
@@ -71,13 +84,16 @@
       </article>
     </section>
     <section>
+      <h2>Попробуйте наши хиты продаж!</h2>
       <ul>
         <li>
           <span>Хит</span>
           <img src="https://via.placeholder.com/267x267" width="267" height="267"
             alt="Изображение сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
           <p>310 ₽<span>/кг</span></p>
-          <a href="catalog.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a href="catalog.html">
+            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+          </a>
           <a href="catalog.html">Быстрый просмотр</a>
         </li>
         <li>
@@ -85,7 +101,9 @@
           <img src="https://via.placeholder.com/267x267" width="267" height="267"
             alt="Изображение сливочно-кофейное мороженое с кусочками шоколада">
           <p>380 ₽<span>/кг</span></p>
-          <a href="catalog.html">Сливочно-кофейное с кусочками шоколада</a>
+          <a href="catalog.html">
+            <h3>Сливочно-кофейное с кусочками шоколада</h3>
+          </a>
           <a href="catalog.html">Быстрый просмотр</a>
         </li>
         <li>
@@ -93,7 +111,9 @@
           <img src="https://via.placeholder.com/267x267" width="267" height="267"
             alt="Изображение сливочно-клубничное мороженое с присыпкой из белого шоколада">
           <p>355 ₽<span>/кг</span></p>
-          <a href="catalog.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a href="catalog.html">
+            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+          </a>
           <a href="catalog.html">Быстрый просмотр</a>
         </li>
         <li>
@@ -101,13 +121,15 @@
           <img src="https://via.placeholder.com/267x267" width="267" height="267"
             alt="Изображение сливочное мороженое крем-брюле с карамельной подливкой">
           <p>415 ₽<span>/кг</span></p>
-          <a href="catalog.html">Сливочное крем-брюле с карамельной подливкой</a>
+          <a href="catalog.html">
+            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+          </a>
           <a href="catalog.html">Быстрый просмотр</a>
         </li>
       </ul>
     </section>
     <section>
-      <b>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+      <h2>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
       <ul>
         <li>
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
@@ -130,30 +152,34 @@
     <div>
       <article class="new-post-banner">
         <p>Новое в нашем блоге</p>
-        <a href="#"><b>10 способов сервировки фруктовых щербетов к столу</b></a>
+        <a href="#">
+          <h3>10 способов сервировки фруктовых щербетов к столу</h3>
+        </a>
       </article>
-      <section class="mailing">
+      <div class="mailing">
         <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <div>
           <!-- тут будет форма эмайла -->
         </div>
-      </section>
+      </div>
     </div>
     <section>
+      <h2>Как нас найти</h2>
       <!-- тут карта -->
       <div class="how-to-find">
         <p>Адрес главного офиса и офлайн-магазина:</p>
         <p>ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
         <p>Для заказов по телефону:</p>
-        <p>8 812 450-25-25</p>
+        <a href="tel:88124502525">8 812 450-25-25</a>
         <p>(с 10 до 20 ежедневно)</p>
-        <button>Форма обратной связи</button>
+        <a class="btn btn-open-form" href="feedback.html">Форма обратной связи</a>
       </div>
-    </div>
+    </section>
   </main>
   <footer>
     <section>
+      <h2>Ищите нас в соц. сетях!</h2>
       <ul>
         <li>
           <a href="#">Facebook</a>
@@ -170,6 +196,7 @@
       </ul>
     </section>
     <section>
+      <h2>Документы</h2>
       <ul>
         <li>
           <a href="#">Для поставщиков</a>
