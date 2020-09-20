@@ -65,6 +65,13 @@ body {
   padding: 10px 13px;
 }
 
+.nav-on-page {
+  padding: 10px 13px;
+  border-color: transparent;
+  background-color: var(--nav-list-on-page);
+  border-radius: 26px;
+}
+
 .main-nav-button:hover {
   color: var(--basic-black);
   background: var(--basic-white);
@@ -308,4 +315,49 @@ body {
 
 .lstyle-none {
   list-style: none;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-header {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.back-arrow {
+  opacity: 0.2;
+  margin-right: 16px;
+}
+
+.nav-arrow {
+  display: inline-block;
+}
+
+
+.nav-page {
+  display: inline-block;
+  padding: 4px 8.5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  margin-right: 4px;
+}
+
+.nav-page:hover {
+  background: var(--alpha-white);
+  border-radius: 50%;
+}
+
+.nav-page a {
+  color: var(--basic-white);
+}
+
+.page-active, .page-active:hover {
+  color: var(--basic-black);
+  background: var(--basic-white);
+  border-radius: 50%;
 }
