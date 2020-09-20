@@ -350,6 +350,7 @@ body {
 .nav-page:hover {
   background: var(--alpha-white);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .nav-page a {
@@ -360,4 +361,5 @@ body {
   color: var(--basic-black);
   background: var(--basic-white);
   border-radius: 50%;
+  cursor: default;
 }
