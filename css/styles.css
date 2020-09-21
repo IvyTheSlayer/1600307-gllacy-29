@@ -62,11 +62,10 @@ body {
 
 .main-nav-button {
   border-bottom: 1px solid var(--alpha-white);
-  padding: 10px 13px;
+  padding: 5.5px 14px;
 }
 
 .nav-on-page {
-  padding: 10px 13px;
   border-color: transparent;
   background-color: var(--nav-list-on-page);
   border-radius: 26px;
@@ -133,7 +132,7 @@ body {
 
 .slide-button {
   border-radius: 70px;
-  padding: 10px 40px 10px 40px;
+  padding: 12px 40px;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
@@ -181,7 +180,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  padding: 15px 22px 15px 22px;
+  padding: 13px 22px;
   border-radius: 70px;
 }
 
@@ -329,7 +328,6 @@ body {
 }
 
 .back-arrow {
-  opacity: 0.2;
   margin-right: 16px;
 }
 
@@ -337,6 +335,9 @@ body {
   display: inline-block;
 }
 
+.disabled {
+  opacity: 0.2;
+}
 
 .nav-page {
   display: inline-block;
