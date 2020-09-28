@@ -54,15 +54,35 @@ body {
   line-height: 22px;
   color: var(--basic-white);
   background: var(--swamp-bg);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page {
+  height: 100%;
+}
+
+.header-container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-container a {
+  color: var(--basic-white);
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-nav li {
   font-weight: bold;
   line-height: 18px;
-}
-
-.main-header a {
-  color: var(--basic-white);
 }
 
 .main-nav-button {
@@ -170,28 +190,66 @@ body {
   background: var(--choco-color);
 }
 
+.banners {
+  display: grid;
+  grid-gap: 26px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.banner {
+  border-radius: 16px;
+  width: 560px;
+  height: 229px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .banner-header {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
+  margin: 16px 30px 0 16px;
+  grid-column: 1 / -1;
+  grid-row: 1;
 }
 
 .banner-text {
   font-weight: bold;
   font-size: 18px;
+  margin: 0 30px 0 16px;
+  grid-column: 1 / -1;
+  grid-row: 2;
 }
 
 .banner-button {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  padding: 13px 22px;
+  padding: 12px 22px;
   border-radius: 70px;
+  grid-column: 2;
+  grid-row: 3;
+  margin: 22px;
+  text-align: center;
+  justify-self: right;
+}
+
+.production-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 26px;
+  margin: 0;
+  padding: 0;
 }
 
 .production-item:hover {
   background: var(--alpha-white);
   box-shadow: 0px 20px 20px var(--box-shadow-hover);
+}
+
+.production-item {
+  text-align: center;
 }
 
 .production-price {
@@ -230,8 +288,12 @@ body {
   border-bottom: 1px solid var(--link-hover-color);
 }
 
-.advantages {
+.advantages-content {
   background: var(--advantages-color);
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
 }
 
 .advantages-header {
@@ -239,15 +301,56 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-black);
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.advantages-list {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "factory factory ing ing"
+  "natural natural temp temp";
+  margin: 0;
+  padding: 0;
 }
 
 .advantage-item {
   color: var(--basic-black);
 }
 
+.advantage-item:nth-child(1) {
+  grid-area: factory;
+}
+
+.advantage-item:nth-child(2) {
+  grid-area: natural;
+}
+
+.advantage-item:nth-child(3) {
+  grid-area: ing;
+}
+
+.advantage-item:nth-child(4) {
+  grid-area: temp;
+}
+
+.promo-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 26px;
+}
+
 .new-post-banner {
   background: var(--new-post-color);
   color: var(--basic-black);
+  grid-column: 1;
+  border-radius: 16px;
+  height: 220px;
 }
 
 .new-post-notify {
@@ -260,6 +363,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  display: inherit;
 }
 
 .new-post-header:hover, .new-post-header:active {
@@ -269,6 +373,9 @@ body {
 
 .mailing {
   background: var(--modal-white);
+  grid-column: 2;
+  border-radius: 16px;
+  height: 220px;
 }
 
 .mailing-text {
@@ -277,13 +384,26 @@ body {
 
 .map {
   background: var(--darker-white);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.address-box {
   color: var(--basic-black);
   border-radius: 16px;
+  height: 430px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
 }
 
 .how-to-find {
+  grid-column: 3 / 5;
+  justify-self: right;
   font-size: 14px;
   line-height: 20px;
+  background: var(--darker-white);
+  border-radius: 16px;
 }
 
 .how-to-find b {
@@ -300,6 +420,11 @@ body {
   padding: 13px 28px;
   border-radius: 70px;
   text-shadow: 0px 2px 5px var(--text-shadow);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-docs-item {
