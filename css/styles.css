@@ -57,7 +57,6 @@ body {
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
 .page {
@@ -155,6 +154,14 @@ body {
   box-shadow: inset 0px 2px 2px var(--box-shadow-active);
 }
 
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
 .slide-button {
   border-radius: 70px;
   padding: 12px 40px;
@@ -199,27 +206,19 @@ body {
 .banner {
   border-radius: 16px;
   width: 560px;
-  height: 229px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .banner-header {
   font-weight: bold;
   font-size: 35px;
   line-height: 41px;
-  margin: 16px 30px 0 16px;
-  grid-column: 1 / -1;
-  grid-row: 1;
+  margin: 16px 30px 9px 16px;
 }
 
 .banner-text {
   font-weight: bold;
   font-size: 18px;
   margin: 0 30px 0 16px;
-  grid-column: 1 / -1;
-  grid-row: 2;
 }
 
 .banner-button {
@@ -228,11 +227,7 @@ body {
   line-height: 24px;
   padding: 12px 22px;
   border-radius: 70px;
-  grid-column: 2;
-  grid-row: 3;
-  margin: 22px;
   text-align: center;
-  justify-self: right;
 }
 
 .production-list {
@@ -291,9 +286,6 @@ body {
 .advantages-content {
   background: var(--advantages-color);
   border-radius: 16px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
 }
 
 .advantages-header {
@@ -309,33 +301,12 @@ body {
   grid-column: 1 / -1;
   grid-row: 2;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-  "factory factory ing ing"
-  "natural natural temp temp";
   margin: 0;
   padding: 0;
 }
 
 .advantage-item {
   color: var(--basic-black);
-}
-
-.advantage-item:nth-child(1) {
-  grid-area: factory;
-}
-
-.advantage-item:nth-child(2) {
-  grid-area: natural;
-}
-
-.advantage-item:nth-child(3) {
-  grid-area: ing;
-}
-
-.advantage-item:nth-child(4) {
-  grid-area: temp;
 }
 
 .promo-content {
@@ -384,8 +355,6 @@ body {
 
 .map {
   background: var(--darker-white);
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .address-box {
@@ -393,12 +362,9 @@ body {
   border-radius: 16px;
   height: 430px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
 }
 
 .how-to-find {
-  grid-column: 3 / 5;
   justify-self: right;
   font-size: 14px;
   line-height: 20px;
@@ -420,11 +386,6 @@ body {
   padding: 13px 28px;
   border-radius: 70px;
   text-shadow: 0px 2px 5px var(--text-shadow);
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-docs-item {
