@@ -71,7 +71,81 @@
     <h1 class="catalog-header">Сливочное мороженое</h1>
     <section class="filter-list">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь фильтр товаров -->
+      <form class="filters" method="GET" action="https://echo.htmlacademy.ru/">
+        <fieldset class="filter-box">
+          <legend>Сортировка:</legend>
+          <div class="range-filter">
+            <select class="filter-droplist sort" name="sort">
+              <option value="popular" selected>по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+            <span class="filter-droplist-btn"></span>
+          </div>
+        </fieldset>
+        <fieldset class="filter-box">
+          <legend>Цена: 100 ₽ - 500 ₽</legend>
+          <div class="range-filter money">
+            <div class="scale">
+              <div class="bar"></div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filter-box">
+          <legend>Жирность:</legend>
+          <div class="range-filter fat">
+            <div class="radio-filter">
+              <div class="radio-item">
+                <input type="radio" id="percent0" name="fat-filter" value="0">
+                <label for="percent0">0%</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="percent10" name="fat-filter" value="10" checked>
+                <label for="percent10">10%</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="percent30" name="fat-filter" value="30">
+                <label for="percent30">30%</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="percentAbove30" name="fat-filter" value="30+">
+                <label for="percentAbove30">выше 30%</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filter-box">
+          <legend>Наполнители:</legend>
+          <div class="range-filter fillers">
+            <div class="checkbox-item">
+              <div class="filter-checkbox">
+                <input type="checkbox" id="choco" name="filler" checked>
+                <label for="choco">шоколадные</label>
+              </div>
+              <div class="filter-checkbox">
+                <input type="checkbox" id="sugar" name="filler" checked>
+                <label for="sugar">сахарные присыпки</label>
+              </div>
+              <div class="filter-checkbox">
+                <input type="checkbox" id="fruits" name="filler">
+                <label for="fruits">фрукты</label>
+              </div>
+              <div class="filter-checkbox">
+                <input type="checkbox" id="sirops" name="filler">
+                <label for="sirops">сиропы</label>
+              </div>
+              <div class="filter-checkbox">
+                <input type="checkbox" id="jam" name="filler">
+                <label for="jam">джемы</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <input class="filter-apply" type="button" value="Применить">
+      </form>
     </section>
 
     <section class="production-catalog">
