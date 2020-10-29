@@ -22,6 +22,23 @@
               <a class="main-nav-button" href="#">
                 <span>Каталог</span>
               </a>
+              <div class="drop">
+                <p class="drop-header">Новинки</p>
+                <ul class="drop-list lstyle-none">
+                  <li class="drop-list-item">
+                    <a href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="drop-list-item">
+                    <a href="#">Щербеты</a>
+                  </li>
+                  <li class="drop-list-item">
+                    <a href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="drop-list-item">
+                    <a href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
               <!-- тут будет дроплист -->
             </li>
             <li class="main-nav-item">
@@ -40,13 +57,17 @@
               <a class="service-button service-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
-              <!-- Это форма поиска -->
+              <div class="service-drop">
+                тут форма поиска
+              </div>
             </li>
             <li class="service-item">
               <a class="service-button service-login" href="#">
                 <span>Вход</span>
               </a>
-              <!-- Это форма входа -->
+              <div class="service-drop">
+                тут форма входа
+              </div>
             </li>
             <li class="service-item service-white">
               <a class="service-button service-cart" href="#">
@@ -57,7 +78,7 @@
         </nav>
         <div class="work-time">
           <p>с 10 до 20, ежедневно</p>
-          <a href="tel:88124502525">812 450-25-25</a>
+          <a href="tel:88124502525">8 812 450-25-25</a>
         </div>
       </div>
     </header>
@@ -203,9 +224,9 @@
           <div class="promo-content">
             <article class="new-post-banner">
               <p class="new-post-notify">Новое в нашем блоге</p>
-              <a href="#">
-                <h2 class="new-post-header">10 способов сервировки фруктовых щербетов к столу</h2>
-              </a>
+              <h2 class="new-post-header">
+                <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+              </h2>
             </article>
             <section class="mailing">
               <div class="mailing-wrapper">
@@ -224,21 +245,21 @@
         </div>
       </div>
       <section class="map">
-        <div style="position:relative;overflow:hidden;">
-          <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
-          <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323118%2C59.938635&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 на карте Санкт-Петербурга, ближайшее метро Гостиный двор — Яндекс.Карты</a>
-          <iframe src="https://yandex.ru/map-widget/v1/-/CCQ~VYT4LC" width="1200" height="430" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-        </div>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCQ~VYT4LC" width="1200" height="430" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
         <div class="container">
           <div class="address-box">
             <h2 class="visually-hidden">Как нас найти</h2>
             <!-- тут карта -->
             <div class="how-to-find">
-              <p>Адрес главного офиса <br>и офлайн-магазина:</p>
-              <p><b>ул. Большая Конюшенная,<br> 19/8, Санкт-Петербург</b></p>
-              <p>Для заказов по телефону:</p>
-              <a href="tel:88124502525"><b>8 812 450-25-25</b></a>
-              <p>(с 10 до 20 ежедневно)</p>
+              <div class="address-box-item">
+                <p class="address-box-text">Адрес главного офиса и&nbsp;офлайн-магазина:</p>
+                <p class="address-box-info">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
+              </div>
+              <div class="address-box-item">
+                <p class="address-box-text">Для заказов по телефону:</p>
+                <a class="address-box-info" href="tel:88124502525">8 812 450-25-25</a>
+                <p class="address-box-text">(с 10 до 20 ежедневно)</p>
+              </div>
             </div>
             <a class="button feedback-button" href="#">Форма обратной связи</a>
           </div>
@@ -290,7 +311,7 @@
       </section>
       <div class="footer-credits">
         <a href="https://htmlacademy.ru">
-          <img src="img/htmlacademy.svg" width="108px" height="39px" alt="Логитоп HTML Academy">
+          <img src="img/htmlacademy.svg" alt="Логитоп HTML Academy">
         </a>
         <p class="html-academy">Сделано в <a class="white-link" href="https://htmlacademy.ru">HTML Academy</a> © 2019</p>
       </div>
