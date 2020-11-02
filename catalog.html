@@ -14,49 +14,51 @@
 
   <body>
     <div class="catalog-wrapper">
-      <header class="main-header">
-        <div class="container">
-          <nav class="main-nav">
+      <header>
+        <div class="main-header container">
+          <div class="header-wrapper">
             <a href="index.html" class="logo">
               <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy shop"/>
             </a>
-            <ul class="main-nav-list lstyle-none">
-              <li class="main-nav-item">
-                <a class="main-nav-button nav-on-page" href="#">Каталог</a>
-                <!-- тут будет дроплист -->
-              </li>
-              <li class="main-nav-item">
-                <a class="main-nav-button" href="#"
-              ><span>Доставка и оплата</span></a
-            >
-              </li>
-              <li class="main-nav-item">
-                <a class="main-nav-button" href="#"><span>О компании</span></a>
-              </li>
-            </ul>
-            <ul class="service-list lstyle-none">
-              <li class="service-item">
-                <a class="service-button service-search" href="#">
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-                <div class="service-drop">тут форма поиска</div>
-              </li>
-              <li class="service-item">
-                <a class="service-button service-login" href="#">
-                  <span>Вход</span>
-                </a>
-                <div class="service-drop">тут форма входа</div>
-              </li>
-              <li class="service-item service-white">
-                <a class="service-button service-cart full-cart" href="#">
-                  <span>2 товара</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+            <nav class="main-nav">
+              <ul class="main-nav-list lstyle-none">
+                <li class="main-nav-item">
+                  <a class="main-nav-button nav-on-page" href="#">Каталог</a>
+                  <!-- тут будет дроплист -->
+                </li>
+                <li class="main-nav-item">
+                  <a class="main-nav-button" href="#">
+                    <span>Доставка и оплата</span>
+                  </a>
+                </li>
+                <li class="main-nav-item">
+                  <a class="main-nav-button" href="#"><span>О компании</span></a>
+                </li>
+              </ul>
+              <ul class="service-list lstyle-none">
+                <li class="service-item">
+                  <a class="service-button service-search" href="#">
+                    <span class="visually-hidden">Поиск</span>
+                  </a>
+                  <div class="service-drop">тут форма поиска</div>
+                </li>
+                <li class="service-item">
+                  <a class="service-button service-login" href="#">
+                    <span>Вход</span>
+                  </a>
+                  <div class="service-drop">тут форма входа</div>
+                </li>
+                <li class="service-item service-white">
+                  <a class="service-button service-cart full-cart" href="#">
+                    <span>2 товара</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="work-time">
             <p>с 10 до 20, ежедневно</p>
-            <a href="tel:88124502525">812 450-25-25</a>
+            <a href="tel:88124502525">8 812 450-25-25</a>
           </div>
         </div>
       </header>
@@ -88,7 +90,7 @@
               </div>
             </fieldset>
             <fieldset class="filter-box">
-              <legend>Цена: 100 ₽ - 500 ₽</legend>
+              <legend>Цена: 100 ₽ – 500 ₽</legend>
               <div class="range-filter money">
                 <div class="scale">
                   <div class="bar"></div>
@@ -107,14 +109,14 @@
                   </div>
                   <div class="radio-item">
                     <input type="radio" id="percent10" name="fat-filter" value="10" checked/>
-                    <label for="percent10">10%</label>
+                    <label for="percent10">до 10%</label>
                   </div>
                   <div class="radio-item">
-                    <input type="radio" id="percent30" name="fat-filter" value="30"/>
-                    <label for="percent30">30%</label>
+                    <input type="radio" id="percent30" name="fat-filter" value="30" disabled/>
+                    <label for="percent30">до 30%</label>
                   </div>
                   <div class="radio-item">
-                    <input type="radio" id="percentAbove30" name="fat-filter" value="30+"/>
+                    <input type="radio" id="percentAbove30" name="fat-filter" value="30+" disabled/>
                     <label for="percentAbove30">выше 30%</label>
                   </div>
                 </div>
@@ -133,7 +135,7 @@
                     <label for="sugar">сахарные присыпки</label>
                   </div>
                   <div class="filter-checkbox">
-                    <input type="checkbox" id="fruits" name="filler" />
+                    <input type="checkbox" id="fruits" name="filler" disabled/>
                     <label for="fruits">фрукты</label>
                   </div>
                   <div class="filter-checkbox">
@@ -178,14 +180,16 @@
             <li class="production-item">
               <img src="img/ic-creme-caramel.png" width="267" height="267" alt="Изображение сливочного мороженого крем-брюле с карамельной подливкой"/>
               <p class="production-price">415 ₽<span>/кг</span></p>
-              <h3> <a class="white-link production-link" href="catalog.html">Сливочное крем-брюле с карамельной подливкой</a>
+              <h3> <a class="white-link production-link" href="catalog.html">Сливочное крем-брюле с&nbsp;карамельной подливкой</a>
               </h3>
               <a class="button production-button" href="catalog.html">Быстрый просмотр</a>
             </li>
+          </ul>
+          <ul class="production-list lstyle-none">
             <li class="production-item">
               <img src="img/ic-lingonberry.png" width="267" height="267" alt="Изображение сливочного мороженого с брусничным джемом"/>
               <p class="production-price">325 ₽<span>/кг</span></p>
-              <h3> <a class="white-link production-link" href="catalog.html">Сливочное с брусничным джемом</a>
+              <h3> <a class="white-link production-link" href="catalog.html">Сливочное с брусничным джемом&nbsp;&nbsp;</a>
               </h3>
               <a class="button production-button" href="catalog.html">Быстрый просмотр</a>
             </li>
@@ -210,10 +214,12 @@
               </h3>
               <a class="button production-button" href="catalog.html">Быстрый просмотр</a>
             </li>
+          </ul>
+          <ul class="production-list lstyle-none">
             <li class="production-item">
               <img src="img/ic-vanilla-choco.png" width="267" height="267" alt="Изображение сливочно-ванильного мороженого с кусочками шоколада"/>
               <p class="production-price">440 ₽<span>/кг</span></p>
-              <h3> <a class="white-link production-link" href="catalog.html">Сливочно-ванильное с кусочками шоколада</a>
+              <h3> <a class="white-link production-link" href="catalog.html">Сливочно-ванильное с&nbsp;кусочками&nbsp;шоколада</a>
               </h3>
               <a class="button production-button" href="catalog.html">Быстрый просмотр</a>
             </li>
@@ -241,7 +247,8 @@
           </ul>
           <ul class="bottom-nav lstyle-none">
             <li class="nav-arrow back-arrow disabled">
-              <a href="#"> <img   src="img/arrow.svg"   width="7"   height="12"   alt="Кнопка назад" />
+              <a href="#">
+                <img src="img/arrow.svg" width="7" height="12" alt="Кнопка назад"/>
               </a>
             </li>
             <li class="nav-page page-active">1</li>
@@ -258,7 +265,8 @@
               <a href="#">5</a>
             </li>
             <li class="nav-arrow">
-              <a href="#"> <img   src="img/arrow.svg"   width="7"   height="12"   alt="Кнопка вперед" />
+              <a href="#">
+                <img src="img/arrow.svg" width="7" height="12" alt="Кнопка вперед"/>
               </a>
             </li>
           </ul>

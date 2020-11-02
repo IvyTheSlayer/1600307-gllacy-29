@@ -11,12 +11,12 @@
 
 <body>
   <div class="site-wrapper-1">
-    <header class="main-header">
-      <div class="container">
+    <header class="main-header container">
+      <div class="header-wrapper">
+        <a class="logo">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy shop">
+        </a>
         <nav class="main-nav">
-          <a class="logo">
-            <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy shop">
-          </a>
           <ul class="main-nav-list lstyle-none">
             <li class="main-nav-item">
               <a class="main-nav-button" href="#">
@@ -76,10 +76,10 @@
             </li>
           </ul>
         </nav>
-        <div class="work-time">
-          <p>с 10 до 20, ежедневно</p>
-          <a href="tel:88124502525">8 812 450-25-25</a>
-        </div>
+      </div>
+      <div class="work-time">
+        <p>с 10 до 20, ежедневно</p>
+        <a href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </header>
 
@@ -91,15 +91,15 @@
           <div class="slide-list">
             <div class="slide cream-raspberry active">
               <h3 class="slide-header">Крем-брюле и пломбир<br/> с малиновым джемом</h3>
-              <a class="button slide-button" href="#">Дайте оба!</a>
+              <a class="button slide-button" href="#">Давайте оба!</a>
             </div>
             <div class="slide choco-limon">
               <h3 class="slide-header">Шоколадный пломбир<br/> и лимонный сорбет</h3>
-              <a class="button slide-button" href="#">Дайте оба!</a>
+              <a class="button slide-button" href="#">Давайте оба!</a>
             </div>
             <div class="slide fondant-strawberry">
               <h3 class="slide-header">Пломбир с помадкой<br/> и клубничный щербет</h3>
-              <a class="button slide-button" href="#">Дайте оба!</a>
+              <a class="button slide-button" href="#">Давайте оба!</a>
             </div>
           </div>
           <div class="slide-controls">
@@ -110,23 +110,23 @@
         </div>
       </section>
       <section class="banners container">
-          <h2 class="visually-hidden">Дарим подарки!</h2>
-          <article class="banner free-jam">
-            <h3 class="banner-header">Малинка даром!</h3>
-            <p class="banner-text">
-              При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
-              банку малинового варенья бесплатно.
-            </p>
-            <a class="button banner-button" href="catalog.html">Хочу варенье!</a>
-          </article>
-          <article class="banner free-chocolate">
-            <h3 class="banner-header">Шоколадки даром!</h3>
-            <p class="banner-text">
-              При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
-              шоколадной присыпки совершенно бесплатно.
-            </p>
-            <a class="button banner-button" href="catalog.html">Хочу шоколадки!</a>
-            </article>
+        <h2 class="visually-hidden">Дарим подарки!</h2>
+        <article class="banner free-jam">
+          <h3 class="banner-header">Малинка даром!</h3>
+          <p class="banner-text">
+            При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
+            банку малинового варенья бесплатно.
+          </p>
+          <a class="button banner-button" href="catalog.html">Хочу варенье!</a>
+        </article>
+        <article class="banner free-chocolate">
+          <h3 class="banner-header">Шоколадки даром!</h3>
+          <p class="banner-text">
+            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
+            шоколадной присыпки совершенно бесплатно.
+          </p>
+          <a class="button banner-button" href="catalog.html">Хочу шоколадки!</a>
+        </article>
       </section>
       <section class="hits">
         <div class="container">
@@ -161,7 +161,7 @@
               <img src="img/ic-white-choco.png" width="267" height="267" alt="Изображение сливочно-клубничного мороженого с присыпкой из белого шоколада">
               <p class="production-price">355 ₽<span>/кг</span></p>
               <h3>
-                <a class="white-link production-link" href="catalog.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                <a class="white-link production-link" href="catalog.html">Сливочно-клубничное с&nbsp;присыпкой из белого шоколада</a>
               </h3>
               <a class="button production-button" href="catalog.html">Быстрый просмотр</a>
             </li>
@@ -172,7 +172,7 @@
               <img src="img/ic-creme-caramel.png" width="267" height="267" alt="Изображение сливочного мороженого крем-брюле с карамельной подливкой">
               <p class="production-price">415 ₽<span>/кг</span></p>
               <h3>
-                <a class="white-link production-link" href="catalog.html">Сливочное крем-брюле с карамельной подливкой</a>
+                <a class="white-link production-link" href="catalog.html">Сливочное крем-брюле с&nbsp;карамельной подливкой</a>
               </h3>
               <a class="button production-button" href="catalog.html">Быстрый просмотр</a>
             </li>
@@ -210,8 +210,7 @@
               </li>
               <li class="advantage-item temp-svg">
                 <p>
-                  Доставка нашего мороженого до заказчиков осуществляется в
-                  специальном термопаке, который не дает мороженому растаять в пути
+                  Доставка нашего мороженого до заказчиков осуществляется в&nbsp;специальном термопаке, который не дает мороженому растаять в пути
                   и позволяет сохранить превосходный вкус.
                 </p>
               </li>
@@ -225,7 +224,7 @@
             <article class="new-post-banner">
               <p class="new-post-notify">Новое в нашем блоге</p>
               <h2 class="new-post-header">
-                <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+                <a href="#">10 способов сервировки фруктовых щербетов к&nbsp;столу</a>
               </h2>
             </article>
             <section class="mailing">
@@ -245,11 +244,10 @@
         </div>
       </div>
       <section class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CCQ~VYT4LC" width="1200" height="430" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        <div class="map-box" id="ya-map"></div>
         <div class="container">
           <div class="address-box">
             <h2 class="visually-hidden">Как нас найти</h2>
-            <!-- тут карта -->
             <div class="how-to-find">
               <div class="address-box-item">
                 <p class="address-box-text">Адрес главного офиса и&nbsp;офлайн-магазина:</p>
@@ -318,5 +316,7 @@
     </footer>
   </div>
   <!-- тут модальное окно -->
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" src="js/custom_mappin.js"></script>
 </body>
 </html>
