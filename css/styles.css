@@ -98,7 +98,7 @@ body {
   flex-direction: row;
   align-items: center;
   width: 87%;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .main-nav-list {
@@ -456,7 +456,9 @@ body {
 .service-login:focus + .service-drop,
 .service-cart:hover + .service-drop,
 .service-cart:focus + .service-drop,
-.service-drop:hover, .service-drop:focus-within {
+.service-drop:hover,
+.service-drop:focus-within,
+.service-item:hover .service-drop {
   opacity: 1;
   pointer-events: auto;
 }

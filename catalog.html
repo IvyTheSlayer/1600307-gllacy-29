@@ -58,6 +58,7 @@
                   </a>
                   <div class="service-drop service-drop-search">
                     <form action="https://echo.htmlacademy.ru/" method="GET">
+                      <label class="visually-hidden" for="query">Поле для ввода запроса поиска</label>
                       <input class="default-input search-input" name="query" type="text" placeholder="Крем-брюле">
                     </form>
                   </div>
@@ -68,8 +69,10 @@
                   </a>
                   <div class="service-drop service-drop-login">
                     <form action="https://echo.htmlacademy.ru/" method="GET">
-                      <input class="default-input drop-input-login" name="email" type="email" placeholder="email@example.com">
-                      <input class="default-input drop-input-login" name="pwd" type="password" placeholder="······">
+                      <label class="visually-hidden" for="email">Поле для ввода email</label>
+                      <input class="default-input drop-input-login" name="email" id="email" type="email" placeholder="email@example.com">
+                      <label class="visually-hidden" for="pwd">Поле для ввода пароля</label>
+                      <input class="default-input drop-input-login" name="pwd" id="pwd" type="password" placeholder="······">
                       <div class="login-links">
                         <button class="button drop-login-btn" type="submit">Войти</button>
                         <a class="drop-link" href="#">Забыли пароль?</a>
@@ -134,7 +137,8 @@
             <fieldset class="filter-box">
               <legend>Сортировка:</legend>
               <div class="range-filter">
-                <select class="filter-droplist sort" name="sort">
+                <label class="visually-hidden" for="select">Сортировка по:</label>
+                <select class="filter-droplist sort" id="select" name="sort">
                   <option value="popular" selected>по популярности</option>
                   <option value="cheap">сначала недорогие</option>
                   <option value="expensive">сначала дорогие</option>
