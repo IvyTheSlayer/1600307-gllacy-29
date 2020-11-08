@@ -1543,7 +1543,8 @@ body {
   line-height: 15px;
   color: var(--basic-black);
   text-decoration: underline;
-  text-decoration-color: var(--input-link-border);
+  -webkit-text-decoration-color: var(--input-link-border);
+          text-decoration-color: var(--input-link-border);
   margin-left: 21px;
   margin-bottom: 2px;
 }
@@ -1551,7 +1552,8 @@ body {
 .drop-link:hover,
 .drop-link:active {
   color: var(--link-click);
-  text-decoration-color: var(--dark-link-click);
+  -webkit-text-decoration-color: var(--dark-link-click);
+          text-decoration-color: var(--dark-link-click);
 }
 
 .modal {
@@ -1665,11 +1667,13 @@ body {
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 /* Animations */
