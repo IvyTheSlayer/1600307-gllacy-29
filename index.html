@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="site-wrapper-1">
+  <div class="site-wrapper site-wrapper-1">
     <header class="main-header container">
       <div class="header-wrapper">
         <a class="logo">
@@ -19,8 +19,8 @@
         <nav class="main-nav">
           <ul class="main-nav-list lstyle-none">
             <li class="main-nav-item">
-              <a class="main-nav-button" href="#">
-                <span>Каталог</span>
+              <a class="main-nav-button" href="catalog.html">
+                Каталог
               </a>
               <div class="drop">
                 <p class="drop-header">Новинки</p>
@@ -56,16 +56,29 @@
               <a class="service-button service-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
-              <div class="service-drop">
-                тут форма поиска
+              <div class="service-drop service-drop-search">
+                <form action="https://echo.htmlacademy.ru/" method="GET">
+                  <label class="visually-hidden" for="query">Поле для ввода запроса поиска</label>
+                  <input class="default-input" name="query" id="query" type="text" placeholder="Крем-брюле">
+                </form>
               </div>
             </li>
             <li class="service-item">
               <a class="service-button service-login" href="#">
                 <span>Вход</span>
               </a>
-              <div class="service-drop">
-                тут форма входа
+              <div class="service-drop service-drop-login">
+                <form action="https://echo.htmlacademy.ru/" method="GET">
+                  <label class="visually-hidden" for="email">Поле для ввода email</label>
+                  <input class="default-input drop-input-login" name="email" id="email" type="email" placeholder="email@example.com">
+                  <label class="visually-hidden" for="pwd">Поле для ввода пароля</label>
+                  <input class="default-input drop-input-login" name="pwd" id="pwd" type="password" placeholder="······">
+                  <div class="login-links">
+                    <button class="button drop-login-btn" type="submit">Войти</button>
+                    <a class="drop-link" href="#">Забыли пароль?</a>
+                    <a class="drop-link" href="#">Новая регистрация</a>
+                  </div>
+                </form>
               </div>
             </li>
             <li class="service-item service-white">
@@ -87,24 +100,24 @@
       <section class="slider">
         <div class="container">
           <h2 class="visually-hidden">Выгодные предложения</h2>
+          <div class="slide-controls">
+            <button class="slider-button slide-1 active-slide" type="button"></button>
+            <button class="slider-button slide-2" type="button"></button>
+            <button class="slider-button slide-3" type="button"></button>
+          </div>
           <div class="slide-list">
             <div class="slide cream-raspberry active">
               <h3 class="slide-header">Крем-брюле и пломбир<br/> с малиновым джемом</h3>
-              <a class="button slide-button" href="#">Давайте оба!</a>
+              <a class="button slide-button" href="catalog.html">Давайте оба!</a>
             </div>
             <div class="slide choco-limon">
               <h3 class="slide-header">Шоколадный пломбир<br/> и лимонный сорбет</h3>
-              <a class="button slide-button" href="#">Давайте оба!</a>
+              <a class="button slide-button" href="catalog.html">Давайте оба!</a>
             </div>
             <div class="slide fondant-strawberry">
               <h3 class="slide-header">Пломбир с помадкой<br/> и клубничный щербет</h3>
-              <a class="button slide-button" href="#">Давайте оба!</a>
+              <a class="button slide-button" href="catalog.html">Давайте оба!</a>
             </div>
-          </div>
-          <div class="slide-controls">
-            <button class="slider-button active-slide" type="button"></button>
-            <button class="slider-button" type="button"></button>
-            <button class="slider-button" type="button"></button>
           </div>
         </div>
       </section>
@@ -234,17 +247,18 @@
                   самого вкусного, что у нас происходит. Обещаем не спамить и не слать
                   всякой ненужной ерунды. Честно =)
                 </p>
-                <div>
-                  <!-- тут будет форма эмайла -->
-                </div>
+                <form class="email-subscription" method="GET" action="https://echo.htmlacademy.ru/">
+                  <label class="visually-hidden" for="email">Поле для ввода имени</label>
+                  <input class="default-input email-sub-input" id="email" name="email" type="email" placeholder="email@example.com">
+                  <button class="button email-sub-btn" type="submit">Отправить</button>
+                </form>
               </div>
             </section>
           </div>
         </div>
       </div>
       <section class="map">
-        <div class="map-box" id="ya-map"></div>
-        <div class="container">
+        <div class="container map-order">
           <div class="address-box">
             <h2 class="visually-hidden">Как нас найти</h2>
             <div class="how-to-find">
@@ -261,6 +275,7 @@
             <a class="button feedback-button" href="#">Форма обратной связи</a>
           </div>
         </div>
+        <div class="map-box" id="ya-map"></div>
       </section>
     </main>
     <footer class="main-footer container">
@@ -314,8 +329,23 @@
       </div>
     </footer>
   </div>
-  <!-- тут модальное окно -->
+  <div class="feedback-background"></div>
+  <section class="modal modal-feedback">
+    <p class="modal-feedback-header">Мы обязательно вам ответим!</p>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="GET">
+      <label class="visually-hidden" for="name">Поле для ввода имени</label>
+      <input class="default-input modal-feedback-input feedback-name" name="name" id="name" type="text" placeholder="Имя Фамилия">
+      <label class="visually-hidden" for="email">Поле для ввода имени</label>
+      <input class="default-input modal-feedback-input feedback-email" name="email" id="email" type="email" placeholder="email@example.com">
+      <label class="visually-hidden" for="text">Поле для ввода отзыва</label>
+      <textarea class="modal-textarea feedback-text" name="feedback-text" id="text" cols="30" rows="8" placeholder="В свободной форме"></textarea>
+      <button class="button modal-send-btn" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть">
+      <img src="img/big-cross.svg" alt="Кнопка закрытия модального окна">
+    </button>
+  </section>
   <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script type="text/javascript" src="js/custom_mappin.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

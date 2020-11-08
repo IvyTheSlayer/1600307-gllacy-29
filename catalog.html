@@ -28,7 +28,7 @@
                     <p class="drop-header">Новинки</p>
                     <ul class="drop-list lstyle-none">
                       <li class="drop-list-item drop-on-page">
-                        <a href="catalog.html">Сливочное</a>
+                        <a href="#">Сливочное</a>
                       </li>
                       <li class="drop-list-item">
                         <a href="#">Щербеты</a>
@@ -56,13 +56,27 @@
                   <a class="service-button service-search" href="#">
                     <span class="visually-hidden">Поиск</span>
                   </a>
-                  <div class="service-drop">тут форма поиска</div>
+                  <div class="service-drop service-drop-search">
+                    <form action="https://echo.htmlacademy.ru/" method="GET">
+                      <input class="default-input search-input" name="query" type="text" placeholder="Крем-брюле">
+                    </form>
+                  </div>
                 </li>
                 <li class="service-item">
                   <a class="service-button service-login" href="#">
                     <span>Вход</span>
                   </a>
-                  <div class="service-drop">тут форма входа</div>
+                  <div class="service-drop service-drop-login">
+                    <form action="https://echo.htmlacademy.ru/" method="GET">
+                      <input class="default-input drop-input-login" name="email" type="email" placeholder="email@example.com">
+                      <input class="default-input drop-input-login" name="pwd" type="password" placeholder="······">
+                      <div class="login-links">
+                        <button class="button drop-login-btn" type="submit">Войти</button>
+                        <a class="drop-link" href="#">Забыли пароль?</a>
+                        <a class="drop-link" href="#">Новая регистрация</a>
+                      </div>
+                    </form>
+                  </div>
                 </li>
                 <li class="service-item">
                   <a class="service-button service-cart full-cart" href="#">
@@ -74,7 +88,7 @@
                         <button class="x-button">
                           <img src="img/cross.svg" alt="Кнопка удаления товара">
                         </button>
-                        <img src="img/ic-orange.png" alt="Изображения мороженного" width="33px" height="33px">
+                        <img src="img/ic-orange.png" alt="Изображения мороженного" width="33" height="33">
                         <p class="cart-drop-text cart-label">Пломбир с апельсиновым джемом</p>
                         <p class="cart-drop-text cart-weight">1,5 кг х <span>200 руб.</span></p>
                         <p class="cart-drop-text cart-price">300 руб.</p>
@@ -83,7 +97,7 @@
                         <button class="x-button">
                           <img src="img/cross.svg" alt="Кнопка удаления товара">
                         </button>
-                        <img src="img/ic-white-choco.png" alt="Изображения мороженного" width="33px" height="33px">
+                        <img src="img/ic-white-choco.png" alt="Изображения мороженного" width="33" height="33">
                         <p class="cart-drop-text cart-label">Клубничный пломбир с присыпкой из белого шоколада</p>
                         <p class="cart-drop-text cart-weight">1,5 кг х <span>300 руб.</span></p>
                         <p class="cart-drop-text cart-price">450 руб.</p>
@@ -142,51 +156,51 @@
             <fieldset class="filter-box">
               <legend>Жирность:</legend>
               <div class="range-filter fat">
-                <div class="radio-filter">
-                  <div class="radio-item">
-                    <input type="radio" id="percent0" name="fat-filter"/>
+                <ul class="radio-filter lstyle-none">
+                  <li class="radio-item">
+                    <input class="visually-hidden" type="radio" id="percent0" name="fat-filter" value="0"/>
                     <label for="percent0">0%</label>
-                  </div>
-                  <div class="radio-item">
-                    <input type="radio" id="percent10" name="fat-filter" value="10" checked/>
+                  </li>
+                  <li class="radio-item">
+                    <input class="visually-hidden" type="radio" id="percent10" name="fat-filter" value="10" checked/>
                     <label for="percent10">до 10%</label>
-                  </div>
-                  <div class="radio-item">
-                    <input type="radio" id="percent30" name="fat-filter" value="30" disabled/>
+                  </li>
+                  <li class="radio-item">
+                    <input class="visually-hidden" type="radio" id="percent30" name="fat-filter" value="30" disabled/>
                     <label for="percent30">до 30%</label>
-                  </div>
-                  <div class="radio-item">
-                    <input type="radio" id="percentAbove30" name="fat-filter" value="30+" disabled/>
+                  </li>
+                  <li class="radio-item">
+                    <input class="visually-hidden" type="radio" id="percentAbove30" name="fat-filter" value="30+" disabled/>
                     <label for="percentAbove30">выше 30%</label>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
             </fieldset>
             <fieldset class="filter-box">
               <legend>Наполнители:</legend>
               <div class="range-filter fillers">
-                <div class="checkbox-item">
-                  <div class="filter-checkbox">
-                    <input type="checkbox" id="choco" name="filler" checked />
+                <ul class="checkbox-item lstyle-none">
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden" type="checkbox" id="choco" name="filler-choco" checked />
                     <label for="choco">шоколадные</label>
-                  </div>
-                  <div class="filter-checkbox">
-                    <input type="checkbox" id="sugar" name="filler" checked />
+                  </li>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden" type="checkbox" id="sugar" name="filler-sugar" checked />
                     <label for="sugar">сахарные присыпки</label>
-                  </div>
-                  <div class="filter-checkbox">
-                    <input type="checkbox" id="fruits" name="filler" disabled/>
+                  </li>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden" type="checkbox" id="fruits" name="filler-fruits" disabled/>
                     <label for="fruits">фрукты</label>
-                  </div>
-                  <div class="filter-checkbox">
-                    <input type="checkbox" id="sirops" name="filler" />
+                  </li>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden" type="checkbox" id="sirops" name="filler-sirops" />
                     <label for="sirops">сиропы</label>
-                  </div>
-                  <div class="filter-checkbox">
-                    <input type="checkbox" id="jam" name="filler" />
+                  </li>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden" type="checkbox" id="jam" name="filler-jam" />
                     <label for="jam">джемы</label>
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
             </fieldset>
             <input class="filter-apply" type="submit" value="Применить" />
@@ -286,7 +300,7 @@
             </li>
           </ul>
           <ul class="bottom-nav lstyle-none">
-            <li class="nav-arrow back-arrow disabled">
+            <li class="back-arrow disabled">
               <a href="#">
                 <img src="img/arrow.svg" alt="Кнопка назад"/>
               </a>
@@ -304,7 +318,7 @@
             <li class="nav-page">
               <a href="#">5</a>
             </li>
-            <li class="nav-arrow">
+            <li>
               <a href="#">
                 <img src="img/arrow.svg" alt="Кнопка вперед"/>
               </a>
