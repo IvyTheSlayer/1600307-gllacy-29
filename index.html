@@ -58,8 +58,8 @@
               </a>
               <div class="service-drop service-drop-search">
                 <form action="https://echo.htmlacademy.ru/" method="GET">
-                  <label class="visually-hidden" for="query">Поле для ввода запроса поиска</label>
-                  <input class="default-input" name="query" id="query" type="text" placeholder="Крем-брюле">
+                  <label class="visually-hidden" for="search-query">Поле для ввода запроса поиска</label>
+                  <input class="default-input" name="query" id="search-query" type="text" placeholder="Крем-брюле">
                 </form>
               </div>
             </li>
@@ -69,8 +69,8 @@
               </a>
               <div class="service-drop service-drop-login">
                 <form action="https://echo.htmlacademy.ru/" method="GET">
-                  <label class="visually-hidden" for="email">Поле для ввода email</label>
-                  <input class="default-input drop-input-login" name="email" id="email" type="email" placeholder="email@example.com">
+                  <label class="visually-hidden" for="email-login">Поле для ввода email</label>
+                  <input class="default-input drop-input-login" name="email" id="email-login" type="email" placeholder="email@example.com">
                   <label class="visually-hidden" for="pwd">Поле для ввода пароля</label>
                   <input class="default-input drop-input-login" name="pwd" id="pwd" type="password" placeholder="······">
                   <div class="login-links">
@@ -248,8 +248,8 @@
                   всякой ненужной ерунды. Честно =)
                 </p>
                 <form class="email-subscription" method="GET" action="https://echo.htmlacademy.ru/">
-                  <label class="visually-hidden" for="email">Поле для ввода имени</label>
-                  <input class="default-input email-sub-input" id="email" name="email" type="email" placeholder="email@example.com">
+                  <label class="visually-hidden" for="email-field">Поле для ввода email</label>
+                  <input class="default-input email-sub-input" id="email-field" name="email" type="email" placeholder="email@example.com">
                   <button class="button email-sub-btn" type="submit">Отправить</button>
                 </form>
               </div>
@@ -330,22 +330,25 @@
     </footer>
   </div>
   <div class="feedback-background"></div>
-  <section class="modal modal-feedback">
-    <p class="modal-feedback-header">Мы обязательно вам ответим!</p>
-    <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="GET">
-      <label class="visually-hidden" for="name">Поле для ввода имени</label>
-      <input class="default-input modal-feedback-input feedback-name" name="name" id="name" type="text" placeholder="Имя Фамилия">
-      <label class="visually-hidden" for="email">Поле для ввода имени</label>
-      <input class="default-input modal-feedback-input feedback-email" name="email" id="email" type="email" placeholder="email@example.com">
-      <label class="visually-hidden" for="text">Поле для ввода отзыва</label>
-      <textarea class="modal-textarea feedback-text" name="feedback-text" id="text" cols="30" rows="8" placeholder="В свободной форме"></textarea>
-      <button class="button modal-send-btn" type="submit">Отправить</button>
-    </form>
-    <button class="modal-close" type="button" aria-label="Закрыть">
-      <img src="img/big-cross.svg" alt="Кнопка закрытия модального окна">
-    </button>
+  <section class="modal js-modal">
+    <div class="modal-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <p class="modal-feedback-header">Мы обязательно вам ответим!</p>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="GET">
+        <label class="visually-hidden" for="name">Поле для ввода имени</label>
+        <input class="default-input modal-feedback-input feedback-name" name="name" id="name" type="text" placeholder="Имя Фамилия">
+        <label class="visually-hidden" for="email-feedback">Поле для ввода имени</label>
+        <input class="default-input modal-feedback-input feedback-email" name="email" id="email-feedback" type="email" placeholder="email@example.com">
+        <label class="visually-hidden" for="text">Поле для ввода отзыва</label>
+        <textarea class="modal-textarea feedback-text" name="feedback-text" id="text" cols="30" rows="8" placeholder="В свободной форме"></textarea>
+        <button class="button modal-send-btn" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть">
+        <img src="img/big-cross.svg" alt="Кнопка закрытия модального окна">
+      </button>
+    </div>
   </section>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script type="text/javascript" src="js/script.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

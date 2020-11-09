@@ -1547,7 +1547,7 @@ body {
   color: var(--basic-black);
   text-decoration: underline;
   -webkit-text-decoration-color: var(--input-link-border);
-          text-decoration-color: var(--input-link-border);
+  text-decoration-color: var(--input-link-border);
   margin-left: 21px;
   margin-bottom: 2px;
 }
@@ -1556,7 +1556,7 @@ body {
 .drop-link:active {
   color: var(--link-click);
   -webkit-text-decoration-color: var(--dark-link-click);
-          text-decoration-color: var(--dark-link-click);
+  text-decoration-color: var(--dark-link-click);
 }
 
 .modal {
@@ -1565,20 +1565,23 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
-  color: var(--basic-black);
-  background-color: var(--modal-white);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
   z-index: 2;
 }
 
 .modal-feedback {
-  display: none;
+  position: relative;
   width: 428px;
-  bottom: auto;
-  left: 18px;
-  top: 338px;
+  flex: none;
+  margin: auto;
   padding: 15px 25px 27px 24px;
   border-radius: 6px;
+  color: var(--basic-black);
+  background-color: var(--modal-white);
 }
 
 .modal-feedback-header {
@@ -1669,14 +1672,15 @@ body {
 }
 
 .modal-show {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
   -webkit-animation: bounce 0.6s;
-          animation: bounce 0.6s;
+  animation: bounce 0.6s;
 }
 
 .modal-error {
   -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 /* Animations */

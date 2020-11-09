@@ -1,21 +1,21 @@
 ﻿ymaps.ready(function () {
-  var myMap = new ymaps.Map('ya-map', {
+  var myMap = new ymaps.Map("ya-map", {
       center: [59.939346, 30.329383],
       zoom: 16,
       controls: []
     },{
       suppressMapOpenBlock: true
     },{
-      searchControlProvider: 'yandex#search'
+      searchControlProvider: "yandex#search"
     }),
     myPlacemark = new ymaps.Placemark(([59.938669, 30.323057]), {
 
     }, {
       // Опции.
       // Необходимо указать данный тип макета.
-      iconLayout: 'default#image',
+      iconLayout: "default#image",
       // Своё изображение иконки метки.
-      iconImageHref: 'img/pin.svg',
+      iconImageHref: "img/pin.svg",
       // Размеры метки.
       iconImageSize: [80, 140],
       // Смещение левого верхнего угла иконки относительно
@@ -26,6 +26,7 @@
 });
 
 const feedbackLink = document.querySelector(".feedback-button");
+const feedbackJs = document.querySelector(".js-modal");
 const feedbackModal = document.querySelector(".modal-feedback");
 const feedbackClose = document.querySelector(".modal-close");
 const feedbackName = document.querySelector(".feedback-name");
@@ -54,7 +55,7 @@ try {
 
 feedbackLink.addEventListener("click", function (event) {
   event.preventDefault();
-  feedbackModal.classList.add("modal-show");
+  feedbackJs.classList.add("modal-show");
   feedbackBg.classList.add("bg-show");
   if (storageName) {
     feedbackName.value = storageName;
@@ -71,7 +72,7 @@ feedbackLink.addEventListener("click", function (event) {
 
 feedbackClose.addEventListener("click", function (event) {
   event.preventDefault();
-  feedbackModal.classList.remove("modal-show");
+  feedbackJs.classList.remove("modal-show");
   feedbackModal.classList.remove("modal-error");
   feedbackBg.classList.remove("bg-show");
 });
